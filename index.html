@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Enter Your Information</h2>
+	<form id="input-form">
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="height">Height (cm):</label>
+		<input type="number" id="height" name="height" required><br><br>
+
+		<label for="weight">Weight (kg):</label>
+		<input type="number" id="weight" name="weight" required><br><br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required><br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+
+	<br><br>
+
+	<label for="filter">Filter By:</label>
+	<select id="filter">
+		<option value="all">All</option>
+		<option value="name">Name</option>
+		<option value="height">Height</option>
+		<option value="weight">Weight</option>
+		<option value="age">Age</option>
+	</select>
+
+	<br><br>
+
+	<table id="data-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Height (cm)</th>
+				<th>Weight (kg)</th>
+				<th>Age</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<script src="script.js"></script>
+</body>
+</html>
